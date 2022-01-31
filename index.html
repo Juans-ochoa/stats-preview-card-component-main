@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Stats preview card component</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <main class="container">
+            <article class="card">
+                <div class="card-image">
+                    <img
+                        src="/images/image-header-mobile.jpg"
+                        srcset="
+                            /images/image-header-mobile.jpg,
+                            /images/image-header-desktop.jpg
+                        "
+                        sizes="(max-width:375px),1440px"
+                        alt=""
+                    />
+                    <div class="overlay-image"></div>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title">
+                        Get <span>insightss</span> that help your business grow.
+                    </h1>
+                    <p class="card-text">
+                        Discover the benefits of data analytics and make better
+                        decisions regarding revenue, customer experience, and
+                        overall efficiency.
+                    </p>
+                    <div class="card-footer">
+                        <div class="card-footer-item">
+                            <h2>10k+</h2>
+                            <p>companies</p>
+                        </div>
+                        <div class="card-footer-item">
+                            <h2>314</h2>
+                            <p>templates</p>
+                        </div>
+                        <div class="card-footer-item">
+                            <h2>12m+</h2>
+                            <p>queries</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by <a href="#">Your Name Here</a>.
+            </div>
+        </main>
+    </body>
+</html>

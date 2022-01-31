@@ -1,0 +1,208 @@
+:root {
+    --primary-color-dark-blue: hsl(233, 47%, 7%);
+    --primary-color-desatured-blue: hsl(244, 38%, 16%);
+    --primary-color-violet: hsl(277, 64%, 61%);
+
+    --neutral-color-white: hsl(0, 0%, 100%);
+    --neutral-color-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --neutral-color-stat-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--primary-color-dark-blue);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 2rem auto;
+}
+
+.card {
+    max-width: 370px;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 0.6rem;
+    background-color: var(--primary-color-desatured-blue);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.overlay-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color-violet);
+    opacity: 0.5;
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.card-image > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem 0.6rem 0 0;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-flow: column;
+    padding: 2rem;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--neutral-color-white);
+}
+
+.card-title > span {
+    color: var(--primary-color-violet);
+}
+
+.card-text {
+    text-align: center;
+    color: var(--neutral-color-transparent-white);
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.card-footer-item > * {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.card-footer-item > h2 {
+    color: var(--neutral-color-white);
+}
+
+.card-footer-item > p {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--neutral-color-stat-transparent-white);
+}
+
+@media screen and (min-width: 790px) {
+    .container {
+        margin: 0;
+    }
+
+    .card {
+        min-width: 900px;
+        height: 350px;
+        border-radius: 0.6rem;
+        background-color: var(--primary-color-desatured-blue);
+    }
+
+    .card-image {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        border-radius: 0 0.6rem 0.6rem 0;
+        float: right;
+    }
+
+    .overlay-image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: var(--primary-color-violet);
+        opacity: 0.5;
+    }
+
+    .card-image > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0.6rem 0.6rem 0;
+        object-fit: cover;
+    }
+
+    .overlay-image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: var(--primary-color-violet);
+        opacity: 0.5;
+        border-radius: 0 0.6rem 0.6rem 0;
+    }
+
+    .card-body {
+        padding: 3rem;
+    }
+
+    .card-title {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: var(--neutral-color-white);
+        text-align: left;
+    }
+
+    .card-text {
+        color: var(--neutral-color-transparent-white);
+        text-align: left;
+    }
+
+    .card-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+.attribution {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
